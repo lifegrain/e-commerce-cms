@@ -12,7 +12,8 @@
   "scripts": {
     "test": "set NODE_ENV=test&&jest --forceExit --detectOpenHandles",
     "testw": "set NODE_ENV=test&&jest --forceExit --watch --detectOpenHandles",
-    "dev": "set NODE_ENV=development&&nodemon bin/httpServer.js"
+    "dev": "set NODE_ENV=development&&nodemon bin/httpServer.js",
+    "deploy" : "nodemon bin/httpServer.js"
   },
   "keywords": [],
   "author": "",
