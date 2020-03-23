@@ -5,7 +5,9 @@ const product = require(`./productRoutes`)
 const authen = require(`../middleware/authenticate`)
 
 router.get(`/`, (req, res) => {
-  res.send(`home`);
+  res.status(200).json({
+    home: `home`
+  })
 });
 
 router.use(`/admins`, admin);
